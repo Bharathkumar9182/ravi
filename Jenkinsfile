@@ -1,33 +1,14 @@
 pipeline{
     agent any
-    triggers {
-      pollSCM '* * * * *'
-    }
     stages{
-        stage("Maven Build"){
-            when {
-                branch "develop"
-            }
-            steps{
-               sh "mvn package"
-            }
-        }
-        
-        stage("Deploy To QA"){
-            when {
-                branch "qa"
-            }
-            steps{
-               echo "deploying to qa server...."
-            }
-        }
-        stage("Deploy To production"){
-            when {
+        stage("prod"){
+            when{
                 branch "master"
             }
             steps{
-               echo "deploying to master server...."
+                echo "hello from master"
             }
         }
+        
     }
 }
