@@ -6,7 +6,7 @@ pipeline{
                 branch "develop"
             }
             steps{
-                sh "mvn package"
+                echo "hello from develop"
             }
         }
         stage("maven build"){
