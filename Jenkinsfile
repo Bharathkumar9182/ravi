@@ -9,7 +9,7 @@ pipeline{
                 echo "hello from develop"
             }
         }
-        stage("maven build"){
+        stage("deploy"){
             when{
                 branch "master"
             }
