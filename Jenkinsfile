@@ -14,7 +14,7 @@ pipeline{
                 script{
                 mail bcc: '', body: '''hi team,
 todays build is success
-jill jill jiga jiga''', cc: 'indukuriaditya98@gmail.com', from: '', replyTo: '', subject: 'build success', to: 'ravitraining57@gmail.com'
+jill jill jiga jiga''', cc: 'indukuriaditya98@gmail.com', from: '', replyTo: '', subject: 'build success', to: 'ravidheerajteja57@gmail.com'
                 }
             }
         }
